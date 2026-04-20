@@ -335,8 +335,31 @@ class LuxEstate {
 
     // Mobile Navigation
     initMobileNav() {
-        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
         
+        // Toggle mobile menu
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+        }
+        
+        // Close menu when clicking a link
+        const navLinkItems = document.querySelectorAll('.nav-link');
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+        
+        // Bottom nav items
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
         mobileNavItems.forEach(item => {
             item.addEventListener('click', () => {
                 mobileNavItems.forEach(i => i.classList.remove('active'));
