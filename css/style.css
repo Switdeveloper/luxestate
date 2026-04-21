@@ -1185,13 +1185,249 @@ body {
     color: var(--text-muted);
 }
 
+/* Contact Section */
+.contact-section {
+padding: 120px 0;
+background: var(--bg-secondary);
+}
+
+.contact-grid {
+display: grid;
+grid-template-columns: 1fr 1.2fr;
+gap: 4rem;
+align-items: start;
+}
+
+.contact-info {
+padding-right: 2rem;
+}
+
+.contact-info .section-label {
+display: block;
+margin-bottom: 1rem;
+}
+
+.contact-info .section-title {
+font-family: var(--font-display);
+font-size: clamp(2.5rem, 5vw, 3.5rem);
+margin-bottom: 1rem;
+}
+
+.contact-info .section-subtitle {
+font-size: 1.125rem;
+color: var(--text-secondary);
+margin-bottom: 3rem;
+}
+
+.contact-details {
+margin-bottom: 3rem;
+}
+
+.contact-item {
+display: flex;
+align-items: flex-start;
+gap: 1.25rem;
+margin-bottom: 2rem;
+}
+
+.contact-icon {
+width: 56px;
+height: 56px;
+border-radius: var(--radius-md);
+background: var(--accent-gold);
+color: var(--text-light);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+flex-shrink: 0;
+}
+
+.contact-text h4 {
+font-family: var(--font-display);
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+color: var(--text-primary);
+}
+
+.contact-text p {
+color: var(--text-secondary);
+line-height: 1.6;
+font-size: 0.9375rem;
+}
+
+.social-links-large {
+display: flex;
+gap: 1.5rem;
+}
+
+.social-links-large a {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+text-decoration: none;
+color: var(--text-primary);
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.social-links-large a:hover {
+color: var(--accent-gold);
+}
+
+.social-icon {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+border: 1px solid var(--border-medium);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.875rem;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.social-links-large a:hover .social-icon {
+background: var(--accent-gold);
+border-color: var(--accent-gold);
+color: var(--text-light);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+background: var(--bg-primary);
+border-radius: var(--radius-xl);
+padding: 2.5rem;
+box-shadow: var(--shadow-lg);
+}
+
+.form-header {
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.form-header h3 {
+font-family: var(--font-display);
+font-size: 1.75rem;
+margin-bottom: 0.5rem;
+color: var(--text-primary);
+}
+
+.form-header p {
+color: var(--text-secondary);
+font-size: 0.9375rem;
+}
+
+.contact-form .form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+margin-bottom: 0;
+}
+
+.form-field {
+margin-bottom: 1.25rem;
+}
+
+.form-field label {
+display: block;
+font-size: 0.875rem;
+font-weight: 500;
+color: var(--text-primary);
+margin-bottom: 0.5rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+width: 100%;
+padding: 0.875rem 1rem;
+border: 1px solid var(--border-light);
+border-radius: var(--radius-md);
+background: var(--bg-secondary);
+font-size: 0.9375rem;
+color: var(--text-primary);
+font-family: var(--font-body);
+outline: none;
+transition: all 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+border-color: var(--accent-gold);
+box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.1);
+}
+
+.form-field textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+.btn-submit {
+width: 100%;
+padding: 1rem 2rem;
+font-size: 1rem;
+justify-content: center;
+}
+
+.btn-submit svg {
+transition: transform 0.3s ease;
+}
+
+.btn-submit:hover svg {
+transform: translateX(4px) translateY(-2px);
+}
+
+/* Responsive Contact Section */
+@media (max-width: 1024px) {
+.contact-grid {
+grid-template-columns: 1fr;
+gap: 3rem;
+}
+
+.contact-info {
+padding-right: 0;
+text-align: center;
+}
+
+.contact-details {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.contact-item {
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-bottom: 0;
+}
+
+.social-links-large {
+justify-content: center;
+}
+}
+
+@media (max-width: 640px) {
+.contact-form .form-row {
+grid-template-columns: 1fr;
+}
+
+.contact-form-wrapper {
+padding: 1.5rem;
+}
+}
+
 /* CTA Section */
 .cta-section {
-    position: relative;
-    padding: 150px 0;
-    text-align: center;
-    color: var(--text-light);
-    overflow: hidden;
+position: relative;
+padding: 150px 0;
+text-align: center;
+color: var(--text-light);
+overflow: hidden;
 }
 
 .cta-background {

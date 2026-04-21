@@ -597,8 +597,38 @@ closeModal();
 
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
-    new LuxEstate();
+new LuxEstate();
 });
 
 // Register GSAP ScrollTo plugin
 gsap.registerPlugin(ScrollToPlugin);
+
+// Contact Form Handler
+document.addEventListener('DOMContentLoaded', () => {
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+contactForm.addEventListener('submit', (e) => {
+e.preventDefault();
+
+// Get form data
+const formData = new FormData(contactForm);
+const data = Object.fromEntries(formData);
+
+// Show success message
+const submitBtn = contactForm.querySelector('.btn-submit');
+const originalText = submitBtn.innerHTML;
+submitBtn.innerHTML = '<span>Message Sent!</span>';
+submitBtn.style.background = 'var(--accent-gold)';
+
+// Reset form after delay
+setTimeout(() => {
+contactForm.reset();
+submitBtn.innerHTML = originalText;
+submitBtn.style.background = '';
+
+// Show alert (in production, this would be a nicer modal)
+alert('Thank you for your inquiry! Our team will contact you within 24 hours.');
+}, 1500);
+});
+}
+});
