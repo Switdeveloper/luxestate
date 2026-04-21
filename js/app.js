@@ -470,6 +470,51 @@ sqft: '1,500',
 description: 'A sophisticated luxury apartment in Chicago\'s premier downtown location. This residence features high-end finishes, panoramic city views, and access to world-class building amenities. The open floor plan is perfect for entertaining, with a modern kitchen, spacious living area, and a luxurious primary suite.',
 features: ['City Views', 'Doorman', 'Fitness Center', 'Rooftop Deck', 'Parking Included', 'In-Unit Laundry', 'Hardwood Floors', 'Stainless Appliances'],
 agent: { name: 'Sarah Chen', title: 'Luxury Specialist', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100' }
+},
+7: {
+title: 'Mediterranean Villa',
+price: '7,200,000',
+period: '',
+address: 'Santa Barbara, California',
+image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+tag: 'For Sale',
+type: 'Villa',
+beds: 5,
+baths: '4',
+sqft: '5,800',
+description: 'A stunning Mediterranean villa nestled in the hills of Santa Barbara. This architectural gem features hand-painted tiles, arched doorways, and a central courtyard with a fountain. The property includes an infinity pool, outdoor kitchen, and panoramic ocean views.',
+features: ['Ocean Views', 'Infinity Pool', 'Outdoor Kitchen', 'Wine Cellar', 'Courtyard', 'Guest House', 'Arched Doorways', 'Mediterranean Architecture'],
+agent: { name: 'Michael Ross', title: 'Senior Agent', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100' }
+},
+8: {
+title: 'Downtown Loft',
+price: '5,500',
+period: '/mo',
+address: 'San Francisco, California',
+image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+tag: 'For Rent',
+type: 'Loft',
+beds: 1,
+baths: '1.5',
+sqft: '1,200',
+description: 'A stylish industrial loft in the heart of San Francisco. Featuring exposed brick walls, soaring ceilings, and oversized windows with city views. This converted warehouse space offers modern living with authentic industrial character.',
+features: ['Exposed Brick', 'High Ceilings', 'City Views', 'Industrial Design', 'Open Floor Plan', 'Rooftop Access', 'Bike Storage', 'Pet Friendly'],
+agent: { name: 'Sarah Chen', title: 'Luxury Specialist', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100' }
+},
+9: {
+title: 'Hilltop Retreat',
+price: '9,800,000',
+period: '',
+address: 'Aspen, Colorado',
+image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800',
+tag: 'For Sale',
+type: 'Mountain Estate',
+beds: 6,
+baths: '5.5',
+sqft: '7,200',
+description: 'An extraordinary mountain retreat offering unparalleled privacy and stunning alpine views. This architectural masterpiece features floor-to-ceiling windows, a grand stone fireplace, and direct ski-in/ski-out access. The property includes a heated outdoor pool, hot tub, and private hiking trails.',
+features: ['Ski-In/Ski-Out', 'Mountain Views', 'Heated Pool', 'Hot Tub', 'Stone Fireplace', 'Private Trails', 'Wine Cellar', 'Home Theater'],
+agent: { name: 'James Wilson', title: 'Estate Director', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100' }
 }
 };
 
