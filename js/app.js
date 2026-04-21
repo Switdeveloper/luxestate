@@ -333,40 +333,220 @@ class LuxEstate {
         });
     }
 
-    // Mobile Navigation
-    initMobileNav() {
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        const body = document.body;
-        
-        // Toggle mobile menu
-        if (mobileMenuBtn) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                navLinks.classList.toggle('active');
-                body.classList.toggle('menu-open');
-            });
-        }
-        
-        // Close menu when clicking a link
-        const navLinkItems = document.querySelectorAll('.nav-link');
-        navLinkItems.forEach(link => {
-            link.addEventListener('click', () => {
-                if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-                body.classList.remove('menu-open');
-            });
-        });
-        
-        // Bottom nav items
-        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-        mobileNavItems.forEach(item => {
-            item.addEventListener('click', () => {
-                mobileNavItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-    }
+// Mobile Navigation
+initMobileNav() {
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+const body = document.body;
+
+// Toggle mobile menu
+if (mobileMenuBtn) {
+mobileMenuBtn.addEventListener('click', () => {
+mobileMenuBtn.classList.toggle('active');
+navLinks.classList.toggle('active');
+body.classList.toggle('menu-open');
+});
+}
+
+// Close menu when clicking a link
+const navLinkItems = document.querySelectorAll('.nav-link');
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+navLinks.classList.remove('active');
+body.classList.remove('menu-open');
+});
+});
+
+// Bottom nav items
+const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+mobileNavItems.forEach(item => {
+item.addEventListener('click', () => {
+mobileNavItems.forEach(i => i.classList.remove('active'));
+item.classList.add('active');
+});
+});
+
+// Initialize Property Modal
+this.initPropertyModal();
+}
+
+// Property Modal
+initPropertyModal() {
+const modal = document.getElementById('propertyModal');
+const detailButtons = document.querySelectorAll('.btn-details');
+const closeBtn = document.querySelector('.modal-close');
+const overlay = document.querySelector('.modal-overlay');
+
+// Property data
+const properties = {
+1: {
+title: 'Modern Hillside Villa',
+price: '4,500,000',
+period: '',
+address: 'Beverly Hills, California',
+image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+tag: 'For Sale',
+type: 'Villa',
+beds: 5,
+baths: '4.5',
+sqft: '4,200',
+description: 'This stunning modern hillside villa offers breathtaking panoramic views of the city and ocean. Featuring an open-concept design with floor-to-ceiling windows, the home seamlessly blends indoor and outdoor living. The property includes a gourmet kitchen with top-of-the-line appliances, a private infinity pool, and a spacious master suite with a spa-like bathroom.',
+features: ['Infinity Pool', 'Wine Cellar', 'Home Theater', 'Smart Home System', 'Chef\'s Kitchen', 'Guest House', '4-Car Garage', 'Private Gate'],
+agent: { name: 'Michael Ross', title: 'Senior Agent', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100' }
+},
+2: {
+title: 'Skyline Penthouse',
+price: '15,000',
+period: '/mo',
+address: 'Manhattan, New York',
+image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+tag: 'For Rent',
+type: 'Penthouse',
+beds: 3,
+baths: '3',
+sqft: '2,800',
+description: 'Experience luxury living at its finest in this spectacular Manhattan penthouse. Perched high above the city, this residence offers 360-degree views through walls of glass. The interior features imported Italian marble, custom millwork, and designer lighting throughout. Building amenities include a concierge, fitness center, and rooftop terrace.',
+features: ['360° Views', 'Private Terrace', 'Concierge Service', 'Fitness Center', 'Valet Parking', 'Climate Controlled', 'Italian Marble', 'Custom Lighting'],
+agent: { name: 'Sarah Chen', title: 'Luxury Specialist', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100' }
+},
+3: {
+title: 'Waterfront Estate',
+price: '8,750,000',
+period: '',
+address: 'Miami Beach, Florida',
+image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800',
+tag: 'For Sale',
+type: 'Estate',
+beds: 6,
+baths: '5.5',
+sqft: '6,500',
+description: 'A magnificent waterfront estate in the heart of Miami Beach. This architectural masterpiece features direct ocean access with a private dock, expansive outdoor entertaining areas, and a resort-style pool. The interior boasts soaring ceilings, a grand staircase, and meticulously designed living spaces perfect for both intimate gatherings and grand events.',
+features: ['Private Dock', 'Resort Pool', 'Beach Access', 'Outdoor Kitchen', 'Elevator', 'Master Wing', 'Wine Room', 'Gated Entry'],
+agent: { name: 'James Wilson', title: 'Estate Director', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100' }
+},
+4: {
+title: 'Modern Estate',
+price: '6,200,000',
+period: '',
+address: 'Los Angeles, California',
+image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+tag: 'For Sale',
+type: 'Estate',
+beds: 4,
+baths: '3.5',
+sqft: '3,800',
+description: 'A contemporary masterpiece nestled in the Hollywood Hills. This architectural gem features clean lines, walls of glass, and seamless indoor-outdoor flow. The property includes a zero-edge pool, outdoor cinema, and a guesthouse. The interior showcases designer finishes, a chef\'s kitchen, and a primary suite with stunning city views.',
+features: ['Zero-Edge Pool', 'Outdoor Cinema', 'Guest House', 'City Views', 'Solar Panels', 'Media Room', 'Chef\'s Kitchen', 'Smart Home'],
+agent: { name: 'Michael Ross', title: 'Senior Agent', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100' }
+},
+5: {
+title: 'Oceanfront Villa',
+price: '12,900,000',
+period: '',
+address: 'Malibu, California',
+image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+tag: 'For Sale',
+type: 'Villa',
+beds: 7,
+baths: '6',
+sqft: '8,200',
+description: 'An exquisite oceanfront villa offering the ultimate in coastal luxury. This estate features direct beach access, multiple terraces for entertaining, and floor-to-ceiling windows that frame the Pacific Ocean. The home includes a private spa, gourmet kitchen, and a detached guest villa with its own entrance.',
+features: ['Beach Access', 'Private Spa', 'Guest Villa', 'Ocean Views', 'Multiple Terraces', 'Gourmet Kitchen', 'Wine Cellar', 'Security System'],
+agent: { name: 'James Wilson', title: 'Estate Director', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100' }
+},
+6: {
+title: 'Luxury Apartment',
+price: '8,500',
+period: '/mo',
+address: 'Chicago, Illinois',
+image: 'https://images.unsplash.com/photo-1600607687644-a7171b42498c?w=800',
+tag: 'For Rent',
+type: 'Apartment',
+beds: 2,
+baths: '2',
+sqft: '1,500',
+description: 'A sophisticated luxury apartment in Chicago\'s premier downtown location. This residence features high-end finishes, panoramic city views, and access to world-class building amenities. The open floor plan is perfect for entertaining, with a modern kitchen, spacious living area, and a luxurious primary suite.',
+features: ['City Views', 'Doorman', 'Fitness Center', 'Rooftop Deck', 'Parking Included', 'In-Unit Laundry', 'Hardwood Floors', 'Stainless Appliances'],
+agent: { name: 'Sarah Chen', title: 'Luxury Specialist', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100' }
+}
+};
+
+// Open modal
+if (detailButtons) {
+detailButtons.forEach(btn => {
+btn.addEventListener('click', (e) => {
+e.preventDefault();
+const propertyId = btn.dataset.property;
+const property = properties[propertyId];
+
+if (property && modal) {
+// Populate modal
+modal.querySelector('#modalImage').src = property.image;
+modal.querySelector('#modalTitle').textContent = property.title;
+modal.querySelector('#modalPrice').textContent = property.price;
+modal.querySelector('#modalPeriod').textContent = property.period;
+modal.querySelector('#modalAddress span').textContent = property.address;
+modal.querySelector('#modalTag').textContent = property.tag;
+modal.querySelector('#modalBeds').textContent = property.beds;
+modal.querySelector('#modalBaths').textContent = property.baths;
+modal.querySelector('#modalSqft').textContent = property.sqft;
+modal.querySelector('#modalType').textContent = property.type;
+modal.querySelector('#modalDescription').textContent = property.description;
+modal.querySelector('#modalAgentName').textContent = property.agent.name;
+modal.querySelector('#modalAgentTitle').textContent = property.agent.title;
+modal.querySelector('#modalAgentImage').src = property.agent.image;
+
+// Populate features
+const featuresList = modal.querySelector('#modalFeatures');
+featuresList.innerHTML = property.features.map(f => `<li>${f}</li>`).join('');
+
+// Show modal
+modal.classList.add('active');
+document.body.style.overflow = 'hidden';
+
+// Animate modal content
+gsap.fromTo('.modal-container',
+{ opacity: 0, y: 40, scale: 0.95 },
+{ opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power3.out' }
+);
+}
+});
+});
+}
+
+// Close modal
+const closeModal = () => {
+if (modal) {
+gsap.to('.modal-container', {
+opacity: 0,
+y: 40,
+scale: 0.95,
+duration: 0.3,
+ease: 'power3.in',
+onComplete: () => {
+modal.classList.remove('active');
+document.body.style.overflow = '';
+}
+});
+}
+};
+
+if (closeBtn) {
+closeBtn.addEventListener('click', closeModal);
+}
+
+if (overlay) {
+overlay.addEventListener('click', closeModal);
+}
+
+// Close on escape key
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+closeModal();
+}
+});
+}
 }
 
 // Initialize on DOM load

@@ -1,585 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties - LuxEstate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Properties - LuxEstate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body data-theme="light">
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">LuxEstate</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
+<!-- Loading Screen -->
+<div id="loading-screen">
+<div class="loading-content">
+<div class="loading-logo">LuxEstate</div>
+<div class="loading-bar">
+<div class="loading-progress"></div>
+</div>
+</div>
+</div>
 
-    <!-- Floating Navigation -->
-    <nav id="navbar" class="floating-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <span class="logo-icon">◆</span>
-                <span class="logo-text">LuxEstate</span>
-            </a>
-            <div class="nav-links">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="index.html" class="nav-link active">Properties</a>
-                <a href="../index.html#agents" class="nav-link">Agents</a>
-                <a href="../index.html#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
-                    <span class="theme-icon">☀</span>
-                </button>
-                <a href="../index.html#contact" class="btn btn-primary nav-cta">Get Started</a>
-            </div>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+<!-- Floating Navigation -->
+<nav id="navbar" class="floating-nav">
+<div class="nav-container">
+<a href="../index.html" class="nav-logo">
+<span class="logo-icon">◆</span>
+<span class="logo-text">LuxEstate</span>
+</a>
+<div class="nav-links">
+<a href="../index.html" class="nav-link">Home</a>
+<a href="index.html" class="nav-link active">Properties</a>
+<a href="../index.html#agents" class="nav-link">Agents</a>
+<a href="../index.html#contact" class="nav-link">Contact</a>
+</div>
+<div class="nav-actions">
+<button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+<span class="theme-icon">☀</span>
+</button>
+<a href="../index.html#contact" class="btn btn-primary nav-cta">Get Started</a>
+</div>
+<button class="mobile-menu-btn" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="page-hero">
-        <div class="page-hero-bg">
-            <img src="https://images.unsplash.com/photo-1600573472550-999b3c0e1459?w=1920" alt="Luxury Properties">
-            <div class="page-hero-overlay"></div>
-        </div>
-        <div class="page-hero-content">
-            <span class="hero-label reveal-text">Our Collection</span>
-            <h1 class="page-hero-title">
-                <span class="reveal-text">Exceptional</span>
-                <span class="reveal-text gold">Properties</span>
-            </h1>
-            <p class="hero-subtitle reveal-text">Curated homes in the world's most coveted locations</p>
-            <nav class="breadcrumb reveal-text">
-                <a href="../index.html">Home</a>
-                <span class="separator">✦</span>
-                <span>Properties</span>
-            </nav>
-        </div>
-        <div class="hero-scroll">
-            <div class="scroll-indicator">
-                <span>Explore</span>
-                <div class="scroll-line"></div>
-            </div>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="page-hero properties-hero">
+<div class="page-hero-bg">
+<img src="https://images.unsplash.com/photo-1600573472550-999b3c0e1459?w=1920" alt="Luxury Properties">
+<div class="page-hero-overlay"></div>
+</div>
+<div class="page-hero-content">
+<span class="hero-label reveal-text">Our Collection</span>
+<h1 class="page-hero-title">
+<span class="reveal-text">Exceptional</span>
+<span class="reveal-text gold">Properties</span>
+</h1>
+<p class="hero-subtitle reveal-text">Curated homes in the world's most coveted locations</p>
+<nav class="breadcrumb reveal-text">
+<a href="../index.html">Home</a>
+<span class="separator">✦</span>
+<span>Properties</span>
+</nav>
+</div>
+<div class="hero-scroll">
+<div class="scroll-indicator">
+<span>Explore</span>
+<div class="scroll-line"></div>
+</div>
+</div>
+</section>
 
-    <!-- Properties Section -->
-    <section id="properties" class="properties-section">
-        <div class="container">
-            <!-- Elegant Filter Bar -->
-            <div class="filter-bar">
-                <div class="filter-bar-content">
-                    <div class="search-field expanded">
-                        <label>Location</label>
-                        <input type="text" placeholder="City, neighborhood, or address">
-                    </div>
-                    <div class="search-field">
-                        <label>Type</label>
-                        <select>
-                            <option>All Types</option>
-                            <option>House</option>
-                            <option>Villa</option>
-                            <option>Penthouse</option>
-                            <option>Apartment</option>
-                        </select>
-                    </div>
-                    <div class="search-field">
-                        <label>Price</label>
-                        <select>
-                            <option>Any Price</option>
-                            <option>$500k - $1M</option>
-                            <option>$1M - $5M</option>
-                            <option>$5M+</option>
-                        </select>
-                    </div>
-                    <div class="search-field">
-                        <label>Beds</label>
-                        <select>
-                            <option>Any</option>
-                            <option>2+</option>
-                            <option>3+</option>
-                            <option>4+</option>
-                            <option>5+</option>
-                        </select>
-                    </div>
-                    <button class="btn btn-search">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <span>Search</span>
-                    </button>
-                </div>
-            </div>
+<!-- Quick Stats Bar -->
+<section class="stats-bar">
+<div class="stats-bar-content">
+<div class="stat-item">
+<span class="stat-number" data-count="284">0</span>
+<span class="stat-label">Properties</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat-item">
+<span class="stat-number" data-count="48">0</span>
+<span class="stat-label">Cities</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat-item">
+<span class="stat-number" data-count="156">0</span>
+<span class="stat-label">Happy Clients</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat-item">
+<span class="stat-number" data-count="24">0</span>
+<span class="stat-label">Years Experience</span>
+</div>
+</div>
+</section>
 
-            <!-- Results Header -->
-            <div class="results-header">
-                <div class="results-count">
-                    <span class="count-number">24</span>
-                    <span class="count-label">Properties Found</span>
-                </div>
-                <div class="results-actions">
-                    <div class="sort-dropdown">
-                        <label>Sort by</label>
-                        <select>
-                            <option>Featured</option>
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                            <option>Newest</option>
-                        </select>
-                    </div>
-                    <div class="view-toggle">
-                        <button class="view-btn active" data-view="grid" aria-label="Grid view">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <button class="view-btn" data-view="list" aria-label="List view">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="3" y1="6" x2="21" y2="6"></line>
-                                <line x1="3" y1="12" x2="21" y2="12"></line>
-                                <line x1="3" y1="18" x2="21" y2="18"></line>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
+<!-- Properties Section -->
+<section id="properties" class="properties-section">
+<div class="container">
+<!-- Elegant Filter Bar -->
+<div class="filter-bar">
+<div class="filter-bar-content">
+<div class="search-field expanded">
+<label>Location</label>
+<input type="text" placeholder="City, neighborhood, or address">
+</div>
+<div class="search-field">
+<label>Type</label>
+<select>
+<option>All Types</option>
+<option>House</option>
+<option>Villa</option>
+<option>Penthouse</option>
+<option>Apartment</option>
+</select>
+</div>
+<div class="search-field">
+<label>Price</label>
+<select>
+<option>Any Price</option>
+<option>$500k - $1M</option>
+<option>$1M - $5M</option>
+<option>$5M+</option>
+</select>
+</div>
+<div class="search-field">
+<label>Beds</label>
+<select>
+<option>Any</option>
+<option>2+</option>
+<option>3+</option>
+<option>4+</option>
+<option>5+</option>
+</select>
+</div>
+<button class="btn btn-search">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="11" cy="11" r="8"></circle>
+<path d="m21 21-4.35-4.35"></path>
+</svg>
+<span>Search</span>
+</button>
+</div>
+</div>
 
-            <!-- Properties Grid -->
-            <div class="properties-grid elegant" id="propertiesGrid">
-                <!-- Property Card 1 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-badge featured">Featured</div>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Modern Hillside Villa" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag sale">For Sale</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$4,500,000</div>
-                            <h3 class="property-title">Modern Hillside Villa</h3>
-                            <p class="property-address">📍 Beverly Hills, California</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">5</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">4.5</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">4,200</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100" alt="Agent" class="agent-avatar">
-                                <span>Michael Ross</span>
-                            </div>
-                            <a href="detail.html?id=1" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<!-- Results Header -->
+<div class="results-header">
+<div class="results-count">
+<span class="count-number">24</span>
+<span class="count-label">Properties Found</span>
+</div>
+<div class="results-actions">
+<div class="sort-dropdown">
+<label>Sort by</label>
+<select>
+<option>Featured</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest</option>
+</select>
+</div>
+<div class="view-toggle">
+<button class="view-btn active" data-view="grid" aria-label="Grid view">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="3" y="3" width="7" height="7"></rect>
+<rect x="14" y="3" width="7" height="7"></rect>
+<rect x="3" y="14" width="7" height="7"></rect>
+<rect x="14" y="14" width="7" height="7"></rect>
+</svg>
+</button>
+<button class="view-btn" data-view="list" aria-label="List view">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<line x1="3" y1="6" x2="21" y2="6"></line>
+<line x1="3" y1="12" x2="21" y2="12"></line>
+<line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+</button>
+</div>
+</div>
+</div>
 
-                <!-- Property Card 2 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Skyline Penthouse" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag rent">For Rent</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$15,000<span class="period">/mo</span></div>
-                            <h3 class="property-title">Skyline Penthouse</h3>
-                            <p class="property-address">📍 Manhattan, New York</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">3</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">3</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">2,800</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100" alt="Agent" class="agent-avatar">
-                                <span>Sarah Chen</span>
-                            </div>
-                            <a href="detail.html?id=2" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<!-- Properties Grid - Classic Elegant Design -->
+<div class="properties-grid elegant" id="propertiesGrid">
 
-                <!-- Property Card 3 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-badge new">New</div>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800" alt="Waterfront Estate" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag sale">For Sale</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$8,750,000</div>
-                            <h3 class="property-title">Waterfront Estate</h3>
-                            <p class="property-address">📍 Miami Beach, Florida</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">6</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">5.5</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">6,500</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Agent" class="agent-avatar">
-                                <span>James Wilson</span>
-                            </div>
-                            <a href="detail.html?id=3" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<!-- Property Card 1 -->
+<article class="property-card luxury" data-tilt data-property-id="1">
+<div class="property-badge featured">Featured</div>
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Modern Hillside Villa" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag sale">For Sale</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">4,500,000</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Modern Hillside Villa</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Beverly Hills, California
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">5</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">4.5</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">4,200</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">Michael Ross</span>
+<span class="agent-title">Senior Agent</span>
+</div>
+</div>
+<button class="btn-details" data-property="1">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-                <!-- Property Card 4 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Modern Estate" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag sale">For Sale</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$6,200,000</div>
-                            <h3 class="property-title">Modern Estate</h3>
-                            <p class="property-address">📍 Los Angeles, California</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">4</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">3.5</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">3,800</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100" alt="Agent" class="agent-avatar">
-                                <span>Michael Ross</span>
-                            </div>
-                            <a href="detail.html?id=4" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<!-- Property Card 2 -->
+<article class="property-card luxury" data-tilt data-property-id="2">
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Skyline Penthouse" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag rent">For Rent</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">15,000</span>
+<span class="period">/mo</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Skyline Penthouse</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Manhattan, New York
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">3</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">3</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">2,800</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">Sarah Chen</span>
+<span class="agent-title">Luxury Specialist</span>
+</div>
+</div>
+<button class="btn-details" data-property="2">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-                <!-- Property Card 5 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-badge featured">Featured</div>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Oceanfront Villa" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag sale">For Sale</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$12,900,000</div>
-                            <h3 class="property-title">Oceanfront Villa</h3>
-                            <p class="property-address">📍 Malibu, California</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">7</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">6</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">8,200</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Agent" class="agent-avatar">
-                                <span>James Wilson</span>
-                            </div>
-                            <a href="detail.html?id=5" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<!-- Property Card 3 -->
+<article class="property-card luxury" data-tilt data-property-id="3">
+<div class="property-badge new">New</div>
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800" alt="Waterfront Estate" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag sale">For Sale</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">8,750,000</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Waterfront Estate</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Miami Beach, Florida
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">6</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">5.5</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">6,500</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">James Wilson</span>
+<span class="agent-title">Estate Director</span>
+</div>
+</div>
+<button class="btn-details" data-property="3">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-                <!-- Property Card 6 -->
-                <article class="property-card" data-tilt>
-                    <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600607687644-a7171b42498c?w=800" alt="City Apartment" loading="lazy">
-                        <div class="property-overlay">
-                            <button class="btn-favorite" aria-label="Add to favorites">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="property-tag rent">For Rent</div>
-                    </div>
-                    <div class="property-content">
-                        <div class="property-header">
-                            <div class="property-price">$8,500<span class="period">/mo</span></div>
-                            <h3 class="property-title">Luxury Apartment</h3>
-                            <p class="property-address">📍 Chicago, Illinois</p>
-                        </div>
-                        <div class="property-divider"></div>
-                        <div class="property-specs">
-                            <div class="spec">
-                                <span class="spec-value">2</span>
-                                <span class="spec-label">Beds</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">2</span>
-                                <span class="spec-label">Baths</span>
-                            </div>
-                            <div class="spec-divider"></div>
-                            <div class="spec">
-                                <span class="spec-value">1,500</span>
-                                <span class="spec-label">Sq Ft</span>
-                            </div>
-                        </div>
-                        <div class="property-footer">
-                            <div class="property-agent">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100" alt="Agent" class="agent-avatar">
-                                <span>Sarah Chen</span>
-                            </div>
-                            <a href="detail.html?id=6" class="btn-view">
-                                <span>View</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+<!-- Property Card 4 -->
+<article class="property-card luxury" data-tilt data-property-id="4">
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Modern Estate" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag sale">For Sale</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">6,200,000</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Modern Estate</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Los Angeles, California
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">4</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">3.5</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">3,800</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">Michael Ross</span>
+<span class="agent-title">Senior Agent</span>
+</div>
+</div>
+<button class="btn-details" data-property="4">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-            <!-- Elegant Pagination -->
-            <div class="pagination elegant">
-                <button class="page-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                    <span>Previous</span>
-                </button>
-                <div class="page-numbers">
-                    <button class="page-number active">1</button>
-                    <button class="page-number">2</button>
-                    <button class="page-number">3</button>
-                    <span class="page-separator">...</span>
-                    <button class="page-number">8</button>
-                </div>
-                <button class="page-btn">
-                    <span>Next</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </section>
+<!-- Property Card 5 -->
+<article class="property-card luxury" data-tilt data-property-id="5">
+<div class="property-badge featured">Featured</div>
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Oceanfront Villa" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag sale">For Sale</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">12,900,000</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Oceanfront Villa</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Malibu, California
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">7</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">6</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">8,200</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">James Wilson</span>
+<span class="agent-title">Estate Director</span>
+</div>
+</div>
+<button class="btn-details" data-property="5">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-background">
-            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920" alt="Luxury Home">
-        </div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-            <h2 class="cta-title">Can't Find What You're Looking For?</h2>
-            <p class="cta-subtitle">Let our experts curate the perfect property for you</p>
-            <a href="../index.html#contact" class="btn btn-primary btn-large">Contact Agent</a>
-        </div>
-    </section>
+<!-- Property Card 6 -->
+<article class="property-card luxury" data-tilt data-property-id="6">
+<div class="property-image">
+<img src="https://images.unsplash.com/photo-1600607687644-a7171b42498c?w=800" alt="City Apartment" loading="lazy">
+<div class="property-overlay">
+<div class="property-tag rent">For Rent</div>
+<button class="btn-favorite" aria-label="Add to favorites">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+</svg>
+</button>
+</div>
+<div class="property-price-tag">
+<span class="currency">$</span>
+<span class="amount">8,500</span>
+<span class="period">/mo</span>
+</div>
+</div>
+<div class="property-content">
+<div class="property-header">
+<h3 class="property-title">Luxury Apartment</h3>
+<p class="property-address">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Chicago, Illinois
+</p>
+</div>
+<div class="property-divider"></div>
+<div class="property-specs">
+<div class="spec">
+<span class="spec-icon">🛏</span>
+<span class="spec-value">2</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">🛁</span>
+<span class="spec-value">2</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-divider"></div>
+<div class="spec">
+<span class="spec-icon">📐</span>
+<span class="spec-value">1,500</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+</div>
+<div class="property-divider"></div>
+<div class="property-footer">
+<div class="property-agent">
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100" alt="Agent" class="agent-avatar">
+<div class="agent-info">
+<span class="agent-name">Sarah Chen</span>
+<span class="agent-title">Luxury Specialist</span>
+</div>
+</div>
+<button class="btn-details" data-property="6">
+<span>View Details</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="../index.html" class="footer-logo">
-                        <span class="logo-icon">◆</span>
-                        <span class="logo-text">LuxEstate</span>
-                    </a>
-                    <p class="footer-tagline">Curating exceptional homes for discerning clients worldwide.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">IG</a>
-                        <a href="#" aria-label="LinkedIn">LI</a>
-                        <a href="#" aria-label="Facebook">FB</a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Properties</h4>
-                    <ul>
-                        <li><a href="index.html">For Sale</a></li>
-                        <li><a href="index.html">For Rent</a></li>
-                        <li><a href="index.html">Featured</a></li>
-                        <li><a href="index.html">New Listings</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="../index.html#about">About Us</a></li>
-                        <li><a href="../index.html#agents">Our Agents</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>📍 123 Luxury Lane, Beverly Hills, CA 90210</p>
-                    <p>📞 +1 (800) 555-LUXE</p>
-                    <p>✉ hello@luxestate.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 LuxEstate. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+</div>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-nav">
-        <a href="../index.html" class="mobile-nav-item">
-            <span class="icon">🏠</span>
-            <span>Home</span>
-        </a>
-        <a href="index.html" class="mobile-nav-item active">
-            <span class="icon">🏢</span>
-            <span>Properties</span>
-        </a>
-        <a href="../index.html#agents" class="mobile-nav-item">
-            <span class="icon">👤</span>
-            <span>Agents</span>
-        </a>
-        <a href="../index.html#contact" class="mobile-nav-item">
-            <span class="icon">✉</span>
-            <span>Contact</span>
-        </a>
-    </nav>
+<!-- Elegant Pagination -->
+<div class="pagination elegant">
+<button class="page-btn">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+<span>Previous</span>
+</button>
+<div class="page-numbers">
+<button class="page-number active">1</button>
+<button class="page-number">2</button>
+<button class="page-number">3</button>
+<span class="page-separator">...</span>
+<button class="page-number">8</button>
+</div>
+<button class="page-btn">
+<span>Next</span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</button>
+</div>
+</div>
+</section>
 
-    <script src="../js/app.js"></script>
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="cta-background">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920" alt="Luxury Home">
+</div>
+<div class="cta-overlay"></div>
+<div class="cta-content">
+<h2 class="cta-title">Can't Find What You're Looking For?</h2>
+<p class="cta-subtitle">Let our experts curate the perfect property for you</p>
+<a href="../index.html#contact" class="btn btn-primary btn-large">Contact Agent</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../index.html" class="footer-logo">
+<span class="logo-icon">◆</span>
+<span class="logo-text">LuxEstate</span>
+</a>
+<p class="footer-tagline">Curating exceptional homes for discerning clients worldwide.</p>
+<div class="social-links">
+<a href="#" aria-label="Instagram">IG</a>
+<a href="#" aria-label="LinkedIn">LI</a>
+<a href="#" aria-label="Facebook">FB</a>
+</div>
+</div>
+<div class="footer-links">
+<h4>Properties</h4>
+<ul>
+<li><a href="index.html">For Sale</a></li>
+<li><a href="index.html">For Rent</a></li>
+<li><a href="index.html">Featured</a></li>
+<li><a href="index.html">New Listings</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Company</h4>
+<ul>
+<li><a href="../index.html#about">About Us</a></li>
+<li><a href="../index.html#agents">Our Agents</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="../index.html#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Contact</h4>
+<p>📍 123 Luxury Lane, Beverly Hills, CA 90210</p>
+<p>📞 +1 (800) 555-LUXE</p>
+<p>✉ hello@luxestate.com</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 LuxEstate. All rights reserved.</p>
+<div class="footer-legal">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+<a href="../index.html" class="mobile-nav-item">
+<span class="icon">🏠</span>
+<span>Home</span>
+</a>
+<a href="index.html" class="mobile-nav-item active">
+<span class="icon">🏢</span>
+<span>Properties</span>
+</a>
+<a href="../index.html#agents" class="mobile-nav-item">
+<span class="icon">👤</span>
+<span>Agents</span>
+</a>
+<a href="../index.html#contact" class="mobile-nav-item">
+<span class="icon">✉</span>
+<span>Contact</span>
+</a>
+</nav>
+
+<!-- Property Modal -->
+<div id="propertyModal" class="property-modal">
+<div class="modal-overlay"></div>
+<div class="modal-container">
+<button class="modal-close" aria-label="Close modal">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<line x1="18" y1="6" x2="6" y2="18"></line>
+<line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+</button>
+<div class="modal-content">
+<div class="modal-gallery">
+<img id="modalImage" src="" alt="Property">
+<div class="modal-gallery-nav">
+<button class="gallery-nav prev">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+</button>
+<button class="gallery-nav next">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</button>
+</div>
+<div class="modal-tags">
+<span id="modalTag" class="property-tag">For Sale</span>
+</div>
+</div>
+<div class="modal-details">
+<div class="modal-header">
+<div class="modal-price">
+<span class="currency">$</span>
+<span id="modalPrice" class="amount">0</span>
+<span id="modalPeriod" class="period"></span>
+</div>
+<h2 id="modalTitle" class="modal-title">Property Title</h2>
+<p id="modalAddress" class="modal-address">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+<span>Address</span>
+</p>
+</div>
+<div class="modal-specs">
+<div class="spec-card">
+<span class="spec-icon">🛏</span>
+<span id="modalBeds" class="spec-value">0</span>
+<span class="spec-label">Bedrooms</span>
+</div>
+<div class="spec-card">
+<span class="spec-icon">🛁</span>
+<span id="modalBaths" class="spec-value">0</span>
+<span class="spec-label">Bathrooms</span>
+</div>
+<div class="spec-card">
+<span class="spec-icon">📐</span>
+<span id="modalSqft" class="spec-value">0</span>
+<span class="spec-label">Sq Ft</span>
+</div>
+<div class="spec-card">
+<span class="spec-icon">🏠</span>
+<span id="modalType" class="spec-value">Villa</span>
+<span class="spec-label">Type</span>
+</div>
+</div>
+<div class="modal-description">
+<h3>About This Property</h3>
+<p id="modalDescription">Description text...</p>
+</div>
+<div class="modal-features">
+<h3>Key Features</h3>
+<ul id="modalFeatures">
+<li>Feature 1</li>
+<li>Feature 2</li>
+</ul>
+</div>
+<div class="modal-agent">
+<div class="agent-profile">
+<img id="modalAgentImage" src="" alt="Agent" class="agent-avatar-large">
+<div class="agent-details">
+<span id="modalAgentName" class="agent-name">Agent Name</span>
+<span id="modalAgentTitle" class="agent-title">Agent Title</span>
+</div>
+</div>
+<button class="btn-contact-agent">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+<span>Contact Agent</span>
+</button>
+</div>
+<div class="modal-actions">
+<button class="btn-buy">
+<span class="btn-icon">💎</span>
+<span class="btn-text">
+<strong>Buy Now</strong>
+<span class="btn-subtext">Secure this property</span>
+</span>
+</button>
+<button class="btn-rent">
+<span class="btn-icon">🔑</span>
+<span class="btn-text">
+<strong>Rent Now</strong>
+<span class="btn-subtext">Start your lease</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="../js/app.js"></script>
 </body>
 </html>
