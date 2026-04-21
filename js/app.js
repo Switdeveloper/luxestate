@@ -257,28 +257,29 @@ class LuxEstate {
         });
     }
 
-    // Counter Animation
-    initCounterAnimation() {
-        const counters = document.querySelectorAll('.stat-number');
-        
-        counters.forEach(counter => {
-            const target = parseInt(counter.parentElement.dataset.count);
-            
-            ScrollTrigger.create({
-                trigger: counter,
-                start: 'top 90%',
-                onEnter: () => {
-                    gsap.to(counter, {
-                        innerHTML: target,
-                        duration: 2,
-                        snap: { innerHTML: 1 },
-                        ease: 'power2.out'
-                    });
-                },
-                once: true
-            });
-        });
-    }
+// Counter Animation
+initCounterAnimation() {
+const counters = document.querySelectorAll('.stat-number');
+
+counters.forEach(counter => {
+const target = parseInt(counter.dataset.count);
+if (isNaN(target)) return;
+
+ScrollTrigger.create({
+trigger: counter,
+start: 'top 90%',
+onEnter: () => {
+gsap.to(counter, {
+innerHTML: target,
+duration: 2,
+snap: { innerHTML: 1 },
+ease: 'power2.out'
+});
+},
+once: true
+});
+});
+}
 
     // 3D Card Tilt Effect
     init3DCards() {
